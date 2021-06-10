@@ -1,0 +1,115 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the 
+ * files listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other 
+ * CSS/SCSS files in this directory. Styles in this file should be added after the last require_* 
+ * statement. It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require bootstrap-toggle
+ */
+
+@import 'colors';
+@import 'bootstrap';
+
+body {
+    background-color: $background;
+}
+
+div#header-container {
+    margin-top: 50pt;
+}
+
+header#header {
+    padding: 0pt;
+    color: white;
+    font-size: 24pt;
+    height: 50pt;
+    overflow: hidden;
+    display: flex;
+    background-color: $primary;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.header-title-container,
+.header-title-container:hover,
+.header-title-container:active {
+    padding: 5pt;
+    margin-right: auto;
+    cursor: pointer;
+    color: white;
+    font-size: 24pt;
+    text-decoration: none;
+    display: flex;
+    min-width: max-content;
+}
+
+.header-title {
+    margin-left: 5pt;
+    min-width: max-content;
+}
+
+.logo {
+    width: 45pt;
+    height: 40pt;
+}
+
+a.header-button,
+a.header-button:hover,
+a.header-button:active {
+    text-decoration: none;
+    color: white;
+    overflow: hidden;
+}
+
+a.header-button:hover {
+    background-color: darken($primary, 5%);
+}
+
+a.header-button:active {
+    background-color: darken($primary, 10%);
+}
+
+.header-button-text,
+.header-button-text:hover,
+.header-button-text:active {
+    margin: auto 15pt;
+    font-size: 14pt;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline;
+    overflow: hidden;
+}
+
+div#footer-container {
+    margin-top: 50pt;
+}
+
+footer#footer {
+    height: 50pt;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: $background;
+    z-index: 3;
+}
+
+hr.footer-hr {
+    margin: 0 auto 5pt;
+    background-color: $primary;
+}
+
+div.body-padding {
+    padding: 5pt;
+}
